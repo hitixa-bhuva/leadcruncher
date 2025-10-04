@@ -3,12 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CRM Buttons - Bootstrap</title>
+    <!-- Bootstrap CSS Latest -->
     <link rel="stylesheet" href="./assests/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assests/css/dev-style.css">
+    <link rel="stylesheet" href="./assests/css/bootstrap-icons-1.13.1/bootstrap-icons.css">
+    <!-- Font Awesome for Icons -->
+    <style>
+  
+        .button-section {
+            padding: 30px;
+        }
+
+        .button-demo {
+            margin-bottom: 15px;
+        }
+
+    </style>
 </head>
 <body>
-    
-    <script src="./assests/js/bootstrap.min.js"></script>
+    <div class="container">
+        <div class="button-section">
+            <div class="btn-group-demo">
+                <button class="btn dropdown-toggle btn-primary">
+                    <i class="bi bi-funnel"></i> Filter Disposition
+                </button>
+                <button class="btn btn-success dropdown-toggle">
+                    <i class="bi bi-telephone-fill"></i> +1 (870) 771-3981
+                </button>
+                <button class="btn btn-warning dropdown-toggle">
+                    Script (California Region Hot Deals)
+                </button>
+                <button class="btn btn-warning dropdown-toggle">
+                    <i class="bi bi-voicemail"></i> Select Voice Mail
+                </button>
+                <button class="btn btn-secondary">
+                    <i class="bi bi-printer"></i> Print
+                </button>
+                <button class="btn btn-skip">
+                    <i class="bi bi-skip-forward"></i> Skip Trace
+                </button>
+                <button class="btn btn-success">
+                    <i class="bi bi-pencil"></i> Edit
+                </button>
+                <button class="btn btn-secondary">
+                    <i class="bi bi-people"></i> All Contacts
+                </button>
+            </div>
+        </div>
+
+        <!-- Navigation & Data Buttons -->
+        <div class="button-section">
+            <div class="btn-group-demo">
+                <button class="btn bg-purpal">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5m-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5"/>
+                </svg>
+                </button>
+                <button class="btn btn-secondary">
+                    <i class="bi bi-database"></i> My Data Fields
+                </button>
+                <button class="btn btn-success">
+                    <i class="bi bi-pencil"></i> Edit
+                </button>
+                <button class="btn bg-purpal">Arkansas</button>
+                <button class="btn btn-orange">
+                    <i class="bi bi-chevron-left"></i> Prev
+                </button>
+                <button class="btn btn-teal">
+                    Next <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Calling Action Buttons -->
+        <div class="button-section">
+            <div class="button-demo">
+                <div class="btn-group-demo">
+                    <button class="btn btn-secondary">
+                        <i class="bi bi-grid-3x3-gap"></i>
+                    </button>
+                    <button class="btn btn btn-success">
+                        <i class="bi bi-telephone-fill"></i> Start Calling
+                    </button>
+                    <button class="btn btn-info text-white">
+                        <i class="bi bi-play-circle"></i> Play Voice Mail
+                    </button>
+                    <button class="btn btn-secondary">
+                        Transfer/Conf. Call <i class="bi bi-arrow-right-short"></i>
+                    </button>
+                    <button class="btn btn-light-danger">
+                        <i class="bi bi-mic-mute"></i> Mute
+                    </button>
+                </div>
+            </div>
+            <div class="button-demo mt-3">
+                <div class="btn-group-demo">
+                    <button class="btn dropdown-toggle bg-danger border-danger text-white">
+                        <i class="bi bi-telephone-fill"></i> Hang Up
+                    </button>
+                    <button class="btn btn btn-skip">
+                        Call Next Number <i class="bi bi-hash"></i>
+                    </button>
+                    <button class="btn btn btn-skip">
+                        Call Next Record <i class="bi bi-arrow-right-short"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Status Action Buttons -->
+        <div class="button-section">
+            <div class="btn-group-demo">
+                <button class="btn btn btn-success">
+                    <i class="bi bi-telephone-fill"></i> Call
+                </button>
+                <button class="btn dropdown-toggle bg-danger border-danger text-white">
+                    <i class="bi bi-telephone-fill"></i> Hang Up
+                </button>
+                <button class="btn btn-info text-white">
+                    <i class="bi bi-chat-dots"></i>Text
+                </button>
+                <button class="btn btn-secondary rounded-circle" style="width: 40px; height: 40px;">
+                    <i class="bi bi-question-circle"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Sidebar Status Buttons -->
+        <div class="button-section">
+            <div style="max-width: 300px;">
+                <div class="mb-2">
+                    <button class="btn btn-status-none">None</button>
+                </div>
+                <div class="mb-2">
+                    <button class="btn dropdown-toggle bg-danger border-danger text-white ">
+                        <i class="bi bi-fire"></i> Hot Lead
+                    </button>
+                </div>
+                <div class="mb-2">
+                    <button class="btn btn-light-danger">
+                        <i class="bi bi-graph-down"></i> Move To CRM
+                    </button>
+                </div>
+                <div class="mb-2">
+                    <button class="btn btn-skip">
+                        <i class="bi bi-calendar-range"></i> Appointments
+                    </button>
+                </div>
+                <div class="mb-2">
+                    <button class="btn btn-warning dropdown-toggle">
+                        Discussed Deal in California
+                    </button>
+                </div>
+                <div class="mb-2">
+                    <button class="btn btn-status-none">
+                       <i class="bi bi-check2"></i> Interested to Sell in Washinton DC
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phone Action Icons -->
+        <div class="button-section">
+            <div class="btn-group-demo">
+                <button class="btn btn-danger rounded">
+                    <i class="bi bi-telephone-fill"></i>
+                </button>
+                <button class="btn btn-info text-white rounded">
+                    <i class="bi bi-chat-dots"></i>
+                </button>
+                <button class="btn btn-success rounded">
+                   <i class="bi bi-check2"></i>
+                </button>
+                <button class="btn btn-dark rounded">
+                    <i class="bi bi-x"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Button Sizes Demo -->
+        <div class="button-section">
+            <div class="button-demo mb-3">
+                <h5>Large Buttons</h5>
+                <button class="btn btn bg-purpal btn-lg">Large Button</button>
+            </div>
+            <div class="button-demo mb-3">
+                <h5>Regular Buttons</h5>
+                <button class="btn btn bg-purpal">Regular Button</button>
+            </div>
+            <div class="button-demo">
+                <h5>Small Buttons</h5>
+                <button class="btn btn bg-purpal btn-sm">Small Button</button>
+            </div>
+        </div>
+    </div>
+
+<script src="./assests/js/bootstrap.min.js"></script>
 </body>
 </html>
