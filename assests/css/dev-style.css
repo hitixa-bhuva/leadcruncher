@@ -1,0 +1,117 @@
+/* Optional: Custom brand color */
+.main {
+    background-color: rgb(251, 247, 247);
+}
+
+.button-section {
+    padding: 30px;
+}
+
+.button-demo {
+    margin-bottom: 15px;
+}
+
+.btn {
+    border-radius: 5px;
+}
+
+.image {
+    height: 50px;
+    width: 100px;
+}
+
+.navbar {
+    color: #fff !important;
+    margin-bottom: 25px;
+}
+
+/* Custom styles for your navbar links */
+.navbar-custom .nav-link {
+
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link.active {
+    color: #171819 !important;
+    background-color: #f0f0f0 !important;
+    ;
+}
+
+.navbar-custom {
+    background-color: #fff !important;
+    ;
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+    color: #121111 !important;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #556083 !important;
+}
+
+/* Light grey background for accordion header */
+.accordion-button.contact-accordion {
+    background-color: #f0f0f0 !important;
+    /* light grey */
+    color: #333;
+}
+
+/* Optional: change background color on hover/focus */
+.accordion-button.contact-accordion:not(.collapsed):focus,
+.accordion-button.contact-accordion:not(.collapsed):hover {
+    background-color: #e4e4e4 !important;
+}
+
+/* Add spacing between icon and text */
+.accordion-button.contact-accordion i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+.custom-collapse-btn::after {
+    filter: brightness(0);
+    /* converts arrow to black */
+}
+
+.accordion-header {
+    background-color: #e4e4e4 !important;
+}
+
+.message {
+    background-color: #5cb85c !important;
+}
+
+.Dial-header {
+    background-color: #e4e4e4 !important;
+
+}
+
+.dial-box {
+    max-width: 220px;
+    background-color: #f8f9fa;
+}
+
+/* Keypad Buttons */
+.keypad button {
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+/* Action Buttons */
+.action-buttons button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s;
+}
+
+.action-buttons button:hover {
+    transform: scale(1.1);
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,197 +8,603 @@
     <!-- Bootstrap CSS Latest -->
     <link rel="stylesheet" href="./assests/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assests/css/bootstrap-icons-1.13.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="assests/css/dev-style.css">
     <!-- Font Awesome for Icons -->
-    <style>
-  
-        .button-section {
-            padding: 30px;
-        }
+    <link href="assests/fonts/verdana-bold.woff">
 
-        .button-demo {
-            margin-bottom: 15px;
-        }
-
-    </style>
 </head>
-<body>
-    <div class="container">
-        <div class="button-section">
-            <div class="btn-group-demo">
-                <button class="btn dropdown-toggle btn-primary">
-                    <i class="bi bi-funnel"></i> Filter Disposition
-                </button>
-                <button class="btn btn-success dropdown-toggle">
-                    <i class="bi bi-telephone-fill"></i> +1 (870) 771-3981
-                </button>
-                <button class="btn btn-warning dropdown-toggle">
-                    Script (California Region Hot Deals)
-                </button>
-                <button class="btn btn-warning dropdown-toggle">
-                    <i class="bi bi-voicemail"></i> Select Voice Mail
-                </button>
-                <button class="btn btn-secondary">
-                    <i class="bi bi-printer"></i> Print
-                </button>
-                <button class="btn btn-skip">
-                    <i class="bi bi-skip-forward"></i> Skip Trace
-                </button>
-                <button class="btn btn-success">
-                    <i class="bi bi-pencil"></i> Edit
-                </button>
-                <button class="btn btn-secondary">
-                    <i class="bi bi-people"></i> All Contacts
-                </button>
+
+<body class="main">
+    <nav class="navbar navbar-expand-lg navbar-custom nav-pills sticky-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+
+            <!-- Left: Logo -->
+            <div class="d-flex align-items-center">
+                <img src="assests/logo/logo.png" class="image" style="height:40px;" />
+            </div>
+
+            <!-- Center: Navigation Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCRM">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            AreaZoom
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <li><a class="dropdown-item" href="#">Home</a></li>
+                            <li><a class="dropdown-item" href="#">Property Folder</a></li>
+                            <li>
+                                <a class="dropdown-item">Favorite Properties</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accessors Data</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pre-Foreclosure Data
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <li><a class="dropdown-item" href="#">Home</a></li>
+                            <li><a class="dropdown-item" href="#">Notice of Default (NOD)</a></li>
+                            <li><a class="dropdown-item">Foreclosure Statistics</a></li>
+                            <li><a class="dropdown-item">Daily Sold Foreclosure</a></li>
+                            <li><a class="dropdown-item">Map Search</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Successor Data</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Probate Leads</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Expired Listing</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Data Manager</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Owner Verifier</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Skip Tracking</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Triple Dialer</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CRM</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mx-3">
+        <div class="d-flex">
+            <div class="p-2 flex-grow-1 bd-highlight">
+                <h4> <i class="bi bi-telephone-fill"></i> Dial Screen</h4>
+            </div>
+            <div class="p-2 bd-highlight"><a class="btn btn-sm btn-light-danger">Filter Disposition</a></div>
+            <div class="p-2 bd-highlight"><a class="btn btn-sm btn-success">+1 (870) 771-3981</a></div>
+            <div class="p-2 bd-highlight"><a class="btn btn-sm btn-warning">script (California Region Hot Deals)</a>
+            </div>
+            <div class="p-2 bd-highlight"><a class="btn btn-sm btn-warning">Select Voice Mail</a></div>
+            <div class="p-2 bd-highlight"><a class="btn btn-sm btn-warning">Print</a></div>
+            <div class="p-2 bd-highlight"><a class="btn btn-sm btn-primary">Skip Trace</a></div>
+            <div class="p-2 bd-highlight"><a class="btn btn-sm btn-primary">Edit</a></div>
+            <div class="p-2 bd-highlight"><a class="btn btn-sm btn-dark">All Contacts</a></div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="row mt-2">
+            <div class="col-md-8">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <div class="d-flex align-items-center justify-content-between p-2">
+                                <button class="btn p-0 contact-accordion-header-btn" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    <b><i class="bi bi-info-circle-fill"></i> Contact Info</b>
+                                </button>
+                                <button class="btn btn-sm btn-light me-5">
+                                    <i class="bi bi-arrow-down-up"></i>
+                                </button>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn  btn-sm btn-dark me-2">
+                                        <i class="bi bi-person-lines-fill"></i>
+                                    </button>
+
+                                    <button class="btn  btn-sm btn-info me-2">
+                                        <i class="bi bi-pencil-square"></i>
+                                    </button>
+
+                                    <button class="btn btn-sm p-0 contact-accordion-collapse-btn" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        <i class="bi bi-chevron-left"></i>
+                                        <i class="bi bi-chevron-up"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <!-- Row 1 -->
+                                <div class="row mb-3">
+                                    <div class="col-md-2"><strong>Full Name:</strong><br>Albright Family Protection
+                                        Trust, Kathleen L</div>
+                                    <div class="col-md-2"><strong>Property Address:</strong><br>8 Timbercrest Ln</div>
+                                    <div class="col-md-2"><strong>Property City:</strong><br>Bella Vista</div>
+                                    <div class="col-md-2"><strong>Property State:</strong><br>AR</div>
+                                    <div class="col-md-2"><strong>Property Zip:</strong><br>72715</div>
+                                    <div class="col-md-2"><strong>Mailing Address:</strong><br>8 Timbercrest Ln</div>
+                                </div>
+
+                                <!-- Row 2 -->
+                                <div class="row mb-3">
+                                    <div class="col-md-2"><strong>Mailing city:</strong><br>Bella Vista</div>
+                                    <div class="col-md-2"><strong>Mailing State:</strong><br>AR</div>
+                                    <div class="col-md-2"><strong>Mailing Zip:</strong><br>72715</div>
+                                    <div class="col-md-2"><strong>Property Type:</strong><br>-</div>
+                                    <div class="col-md-2"><strong>Sq Ft:</strong><br>1882</div>
+                                    <div class="col-md-2"><strong>Lot Size:</strong><br>25265</div>
+                                </div>
+
+                                <!-- Row 3 -->
+                                <div class="row mb-3">
+                                    <div class="col-md-2"><strong>Beds:</strong><br>0</div>
+                                    <div class="col-md-2"><strong>Baths:</strong><br>2</div>
+                                    <div class="col-md-2"><strong>Year Built:</strong><br>1993</div>
+                                    <div class="col-md-2"><strong>APN:</strong><br>16-40256-000</div>
+                                    <div class="col-md-2"><strong>Last called:</strong><br>16-40256-000</div>
+                                    <div class="col-md-2"><strong>WebSite:</strong><br><a href="">Zillow</a>
+                                        <a href="">Redfin</a>
+                                        <a href="">AreaZoom</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!-- Script -->
+                <div class="row mb-2">
+                    <div class="accordion" id="accordionExample1">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <div class="d-flex align-items-center justify-content-between p-2">
+                                    <button class="btn p-0 contact-accordion-header-btn" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                                        aria-controls="collapseTwo">
+                                        <i class="bi bi-person-badge"></i> Script
+                                    </button>
+                                    <button class="btn btn-sm btn-light">
+                                        <i class="bi bi-arrow-down-up"></i>
+                                    </button>
+                                    <div class="d-flex align-items-center">
+                                        <button class="btn btn-sm p-0 contact-accordion-collapse-btn" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                                            aria-controls="collapseOne">
+
+                                            <i class="bi bi-chevron-up"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                    <p>Hello <strong>Albright Family </strong>,</p>
+                                    <p>
+                                        <a href="#" style="text-decoration: underline;">Leadcruncher</a> is widely
+                                        used
+                                        real-estate application in across the united states. we do have 1M happiest
+                                        customers. To be a part of this huge family please contact us on +91 (704)
+                                        694-3163.
+                                    </p>
+                                    <p class="mt-4">Thanks,</p>
+                                    <p>Team Leadcruncher</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- Navigation & Data Buttons -->
-        <div class="button-section">
-            <div class="btn-group-demo">
-                <button class="btn bg-purpal">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5m-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5"/>
-                </svg>
-                </button>
-                <button class="btn btn-secondary">
-                    <i class="bi bi-database"></i> My Data Fields
-                </button>
-                <button class="btn btn-success">
-                    <i class="bi bi-pencil"></i> Edit
-                </button>
-                <button class="btn bg-purpal">Arkansas</button>
-                <button class="btn btn-orange">
-                    <i class="bi bi-chevron-left"></i> Prev
-                </button>
-                <button class="btn btn-teal">
-                    Next <i class="bi bi-chevron-right"></i>
-                </button>
+        <!-- Call Dial -->
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="Dial-header">
+                            <div class="d-flex mx-2 justify-content-between align-items-center ">
+                                <div class="btn me-5 contact-accordion-header-btn text-start" type="button">
+                                    <b>Albright Family Protection Trust, Kathleen L -8 Timbercrest Ln Bella Vista AR</b>
+                                </div>
+                                <button class="btn btn-sm">
+                                    <h5><i class="bi bi-gear-fill"></i></h5>
+                                </button>
+                            </div>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body d-flex flex-wrap gap-3 justify-content-center">
+                                <p>
+                                    Auto Dial if no answer call after <button class="btn btn-sm bg-light">2 </button>  Sec & dial <button class="btn btn-sm bg-light">15</button> Contact each time
+                                </p>
+                                <!-- Dial Pad -->
+                                <div class="dial-box p-3 border rounded shadow-sm">
+                                    <input type="text" class="form-control mb-2 text-center"
+                                        placeholder="Enter number..." readonly>
+
+                                    <!-- Keypad -->
+                                    <div class="d-grid gap-2" style="grid-template-columns: repeat(3, 1fr);">
+                                        <button class="btn btn-light">1</button>
+                                        <button class="btn btn-light">2</button>
+                                        <button class="btn btn-light">3</button>
+                                        <button class="btn btn-light">4</button>
+                                        <button class="btn btn-light">5</button>
+                                        <button class="btn btn-light">6</button>
+                                        <button class="btn btn-light">7</button>
+                                        <button class="btn btn-light">8</button>
+                                        <button class="btn btn-light">9</button>
+                                        <button class="btn btn-light">*</button>
+                                        <button class="btn btn-light">0</button>
+                                        <button class="btn btn-light">#</button>
+                                    </div>
+
+                                    <!-- Centered Action Buttons -->
+                                    <div class="d-flex justify-content-center gap-3 mt-2 action-buttons">
+                                        <button class="btn btn-success"><i class="bi bi-telephone-fill"></i></button>
+                                        <button class="btn btn-warning text-dark"><i
+                                                class="bi bi-mic-mute-fill"></i></button>
+                                        <button class="btn btn-danger"><i class="bi bi-telephone-x-fill"></i></button>
+                                    </div>
+                                </div>
+
+                                <!-- Side Buttons -->
+                                <div class="flex-grow-1">
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-dark btn-sm">Transfer/Conf. Call</button>
+                                        <button class="btn btn-success btn-sm">Play Voice Mail</button>
+                                        <button class="btn btn-light-danger btn-sm">hang up</button>
+                                        <button class="btn btn-primary btn-sm">Call Next Number</button>
+                                        <button class="btn btn-primary btn-sm">Call Next Record</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="Dial-header">
+                            <div class="d-flex align-items-center justify-content-between p-2">
+                                <button class="btn p-0 contact-accordion-header-btn" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    <b>Albright Family Protection Trust, Kathleen L -8 Timbercrest Ln Bella Vista AR</b>
+                                </button>
+                                <button class="btn btn-sm me-5">
+                                    <h5><i class="bi bi-gear-fill"></i></h5>
+                                </button>
+                            </div>
+                        </h2>
+                        <div class="accordion-collapse collapse show" id="collapseOne">
+                            <div class="accordion-body p-3">
+                                <div class="d-flex flex-wrap">
+                                    <div class="dial-box border shadow-sm rounded p-3 bg-light">
+                                        <input type="text" class="dial-display form-control mb-3"
+                                            placeholder="Enter number..." readonly>
+                                        <div class="keypad mb-3">
+                                            <button class="btn btn-light">1</button>
+                                            <button class="btn btn-light">2</button>
+                                            <button class="btn btn-light">3</button>
+                                            <button class="btn btn-light">4</button>
+                                            <button class="btn btn-light">5</button>
+                                            <button class="btn btn-light">6</button>
+                                            <button class="btn btn-light">7</button>
+                                            <button class="btn btn-light">8</button>
+                                            <button class="btn btn-light">9</button>
+                                            <button class="btn btn-light">*</button>
+                                            <button class="btn btn-light">0</button>
+                                            <button class="btn btn-light">#</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!-- Notes-Email-Text -->
+                <div class="row mb-2">
+                    <div class="accordion" id="accordionExample3">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <div class="d-flex align-items-center justify-content-between p-2">
+
+                                    <ul class="nav nav-tabs nav-sm text-dark" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active btn btn-sm" id="notes-tab"
+                                                data-bs-toggle="tab" data-bs-target="#notes" type="button" role="tab"
+                                                aria-controls="notes" aria-selected="true">Notes</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link btn btn-sm" id="texts-tab" data-bs-toggle="tab"
+                                                data-bs-target="#texts" type="button" role="tab" aria-controls="texts"
+                                                aria-selected="false">Texts</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link btn btn-sm" id="emails-tab" data-bs-toggle="tab"
+                                                data-bs-target="#emails" type="button" role="tab" aria-controls="emails"
+                                                aria-selected="false">Emails</button>
+                                        </li>
+                                    </ul>
+                                    <div class="d-flex align-items-center">
+                                        <button class="btn btn-sm btn-light me-1">
+                                            <i class="bi bi-arrow-down-up"></i>
+                                        </button>
+                                        <button class="btn btn-sm p-0 contact-accordion-collapse-btn m-2" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="true" aria-controls="collapseThree">
+                                            <i class="bi bi-chevron-up"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample3">
+                                <div class="accordion-body p-3">
+
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="notes" role="tabpanel"
+                                            aria-labelledby="notes-tab">
+
+                                            <div id="ckeditor-note-textarea" class="form-control mb-3"
+                                                style="min-height: 150px; border: 1px solid #dee2e6; padding: 10px;"
+                                                contenteditable="true">
+                                                Enter note text here
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-4 mt-3">
+                                                <button class="btn btn-info btn-sm">
+                                                    <i class="bi bi-arrow-clockwise"></i>
+                                                </button>
+                                                <div>
+                                                    <button class="btn btn-success btn-sm me-2">
+                                                        <i class="bi bi-floppy"></i>
+                                                    </button>
+                                                    <button class="btn  btn-dark btn-sm">
+                                                        <i class="bi bi-x-lg"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="card mb-3">
+                                                <div class="card-body p-3">
+                                                    <table class="table border table-sm mb-0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="align-top"
+                                                                    style="width: 1%; white-space: nowrap;">
+                                                                    <strong>Note:</strong>
+                                                                </td>
+                                                                <td>This is my custom note</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="white-space: nowrap;"><strong>Date:</strong>
+                                                                </td>
+                                                                <td>October 03, 2025 11:59 AM</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <div class="d-flex justify-content-center mt-2">
+                                                        <button class="btn btn-info btn-sm me-2"><i
+                                                                class="bi bi-pencil-square"></i> </button>
+                                                        <button class="btn btn-light-danger btn-sm"><i
+                                                                class="bi bi-trash"></i> </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card">
+                                                <div class="card-body p-3">
+                                                    <table class="table border table-sm mb-0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="align-top"
+                                                                    style="width: 1%; white-space: nowrap;">
+                                                                    <strong>Note:</strong>
+                                                                </td>
+                                                                <td>
+                                                                    You Called: <strong>+91 (704) 694-3163</strong><br>
+                                                                    Call Date:<b>September 13, 2025 06:36 PM</b><br>
+                                                                    Note: sent vm
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="white-space: nowrap;"><strong>Date:</strong>
+                                                                </td>
+                                                                <td>September 13, 2025 06:36 PM</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <div class="d-flex justify-content-center mt-2">
+                                                        <button class="btn btn-info btn-sm me-2"><i
+                                                                class="bi bi-pencil-square"></i> </button>
+                                                        <button class="btn  btn-light-danger btn-sm"><i
+                                                                class="bi bi-trash"></i> </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="texts" role="tabpanel"
+                                            aria-labelledby="texts-tab">
+
+                                            <div class="p-3 chat-messages" style="height: 300px; overflow-y: auto;">
+
+                                                <div class="d-flex justify-content-end mb-3">
+                                                    <div class="me-2 text-end">
+                                                        <small class="text-muted d-block">Just now &nbsp; +91 (704)
+                                                            694-3163</small>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <div
+                                                                class="badge bg-success text-white rounded-pill p-2 message">
+                                                                Hi Divyesh
+                                                            </div>
+                                                            <i class="bi bi-check2 text-success me-1"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex justify-content-end mb-3">
+                                                    <div class="me-2 text-end">
+                                                        <small class="text-muted d-block">Just now &nbsp; +91 (704)
+                                                            694-3163</small>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <div
+                                                                class="badge bg-success text-white rounded-pill p-2 message">
+                                                                Are you interested to sell this property.
+                                                            </div>
+                                                            <i class="bi bi-check2 text-success me-1"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="px-3 pb-3 border-top pt-3">
+                                                <div class="d-flex align-items-end">
+
+                                                    <textarea class="form-control me-2"
+                                                        placeholder="Send Text Message..." rows="1"
+                                                        style="height: 38px;"></textarea>
+
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-warning dropdown-toggle" type="button"
+                                                            id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            Select Number
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                                            <li><a class="dropdown-item" href="#">Another action</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">Something else
+                                                                    here</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="emails" role="tabpanel"
+                                            aria-labelledby="emails-tab">
+
+                                            <div class="card mb-3">
+                                                <div
+                                                    class="card-header bg-light p-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <strong class="text-secondary me-3">October 03, 2025 12:03
+                                                            PM</strong>
+                                                    </div>
+                                                    <span class="badge bg-success">Sent</span>
+
+                                                </div>
+                                                <div class="card-body p-3 pt-2">
+                                                    <p class="mb-1">
+                                                        <strong>From:</strong> divyesh.patel@leadcruncher.com<br>
+                                                        <strong>To:</strong> divyeshpadamani@gmail.com<br>
+                                                        <strong>Subject:</strong> Test email to check how email log will
+                                                        look
+                                                    </p>
+
+                                                    <p class="mb-4">Hi Divyesh,</p>
+                                                    <p class="mb-0">Hope you are doing good.</p>
+                                                    <p class="mb-0">This mail was sent to check how email log will look
+                                                        in dialer detail page</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="card ">
+                                                <div
+                                                    class="card-header bg-light p-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <strong class="text-secondary me-3">October 02, 2025 11:12
+                                                            AM</strong>
+
+                                                    </div>
+                                                    <span class="badge bg-success text-end">Sent</span>
+
+                                                </div>
+
+                                                <div class="card-body p-3 pt-2">
+                                                    <p class="mb-1">
+                                                        <strong>From:</strong> divyesh.patel@leadcruncher.com<br>
+                                                        <strong>To:</strong> divyeshpadamani@gmail.com<br>
+                                                        <strong>Subject:</strong> Exploring Opportunities to Buy/Sell
+                                                        Property
+                                                    </p>
+
+                                                    <p class="mb-4">Dear Albright Family,</p>
+                                                    <p class="mb-0">
+                                                        I hope this message finds you well. My name is <u>Albright
+                                                            Family Protection
+                                                            Trust, Kathleen</u> L, and I am reaching out to inquire
+                                                        about potential opportunities to collaborate on property
+                                                        transactions.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- Calling Action Buttons -->
-        <div class="button-section">
-            <div class="button-demo">
-                <div class="btn-group-demo">
-                    <button class="btn btn-secondary">
-                        <i class="bi bi-grid-3x3-gap"></i>
-                    </button>
-                    <button class="btn btn btn-success">
-                        <i class="bi bi-telephone-fill"></i> Start Calling
-                    </button>
-                    <button class="btn btn-info text-white">
-                        <i class="bi bi-play-circle"></i> Play Voice Mail
-                    </button>
-                    <button class="btn btn-secondary">
-                        Transfer/Conf. Call <i class="bi bi-arrow-right-short"></i>
-                    </button>
-                    <button class="btn btn-light-danger">
-                        <i class="bi bi-mic-mute"></i> Mute
-                    </button>
-                </div>
-            </div>
-            <div class="button-demo mt-3">
-                <div class="btn-group-demo">
-                    <button class="btn dropdown-toggle bg-danger border-danger text-white">
-                        <i class="bi bi-telephone-fill"></i> Hang Up
-                    </button>
-                    <button class="btn btn btn-skip">
-                        Call Next Number <i class="bi bi-hash"></i>
-                    </button>
-                    <button class="btn btn btn-skip">
-                        Call Next Record <i class="bi bi-arrow-right-short"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Status Action Buttons -->
-        <div class="button-section">
-            <div class="btn-group-demo">
-                <button class="btn btn btn-success">
-                    <i class="bi bi-telephone-fill"></i> Call
-                </button>
-                <button class="btn dropdown-toggle bg-danger border-danger text-white">
-                    <i class="bi bi-telephone-fill"></i> Hang Up
-                </button>
-                <button class="btn btn-info text-white">
-                    <i class="bi bi-chat-dots"></i>Text
-                </button>
-                <button class="btn btn-secondary rounded-circle" style="width: 40px; height: 40px;">
-                    <i class="bi bi-question-circle"></i>
-                </button>
-            </div>
-        </div>
-
-        <!-- Sidebar Status Buttons -->
-        <div class="button-section">
-            <div style="max-width: 300px;">
-                <div class="mb-2">
-                    <button class="btn btn-status-none">None</button>
-                </div>
-                <div class="mb-2">
-                    <button class="btn dropdown-toggle bg-danger border-danger text-white ">
-                        <i class="bi bi-fire"></i> Hot Lead
-                    </button>
-                </div>
-                <div class="mb-2">
-                    <button class="btn btn-light-danger">
-                        <i class="bi bi-graph-down"></i> Move To CRM
-                    </button>
-                </div>
-                <div class="mb-2">
-                    <button class="btn btn-skip">
-                        <i class="bi bi-calendar-range"></i> Appointments
-                    </button>
-                </div>
-                <div class="mb-2">
-                    <button class="btn btn-warning dropdown-toggle">
-                        Discussed Deal in California
-                    </button>
-                </div>
-                <div class="mb-2">
-                    <button class="btn btn-status-none">
-                       <i class="bi bi-check2"></i> Interested to Sell in Washinton DC
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Phone Action Icons -->
-        <div class="button-section">
-            <div class="btn-group-demo">
-                <button class="btn btn-danger rounded">
-                    <i class="bi bi-telephone-fill"></i>
-                </button>
-                <button class="btn btn-info text-white rounded">
-                    <i class="bi bi-chat-dots"></i>
-                </button>
-                <button class="btn btn-success rounded">
-                   <i class="bi bi-check2"></i>
-                </button>
-                <button class="btn btn-dark rounded">
-                    <i class="bi bi-x"></i>
-                </button>
-            </div>
-        </div>
-
-        <!-- Button Sizes Demo -->
-        <div class="button-section">
-            <div class="button-demo mb-3">
-                <h5>Large Buttons</h5>
-                <button class="btn btn bg-purpal btn-lg">Large Button</button>
-            </div>
-            <div class="button-demo mb-3">
-                <h5>Regular Buttons</h5>
-                <button class="btn btn bg-purpal">Regular Button</button>
-            </div>
-            <div class="button-demo">
-                <h5>Small Buttons</h5>
-                <button class="btn btn bg-purpal btn-sm">Small Button</button>
-            </div>
-        </div>
     </div>
+    <script src="./assests/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
 
-<script src="./assests/js/bootstrap.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.3.1/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#ckeditor-note-textarea'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
 </body>
+
 </html>
