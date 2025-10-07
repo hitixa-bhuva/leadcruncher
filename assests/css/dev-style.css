@@ -1,117 +1,351 @@
-/* Optional: Custom brand color */
-.main {
-    background-color: rgb(251, 247, 247);
+ :root {
+      --primary-color: #5042a9;
+      --light-primary-shade: #e9e7f4;
+      --label-color: #6c757d;
+      --header-bg-color: #fafafa;
+      --danger-light: #fbe5e7;
+    }
+    .text-primary {
+      color: var(--primary-color) !important;
+    }
+
+    .bg-light-primary-shade {
+      background-color: var(--light-primary-shade) !important;
+    }
+
+    .bg-light-primary-shade:hover {
+      opacity: 0.9;
+    }
+
+    .text-muted {
+      color: var(--label-color) !important;
+    }
+
+    .btn-light-danger {
+      background-color: var(--danger-light) !important;
+      color: #dc3545 !important;
+      border-color: var(--danger-light) !important;
+    }
+
+    /* 2. Uniform Header Dimensions */
+    .accordion-header-uniform {
+      padding: 1.25rem 2rem !important;
+      background-color: var(--header-bg-color) !important;
+    }
+
+    .data-item {
+      display: grid;
+      grid-template-columns: 35% 65%;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .data-label {
+      color: var(--label-color);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    @media (min-width: 992px) {
+      .horizontal-layout {
+        display: grid;
+        grid-template-columns: 1fr 1px 1fr;
+        gap: 2rem;
+      }
+
+      .horizontal-divider {
+        background-color: var(--bs-border-color);
+      }
+    }
+
+    .chat-messages {
+      height: 250px;
+    }
+
+    .chat-messages .message {
+      max-width: 75%;
+      word-break: break-word;
+    }
+
+    .chat-messages .badge {
+      font-weight: 500;
+      text-align: left;
+    }
+
+    .chat-messages .bg-success {
+      background-color: #28a745 !important;
+    }
+
+    .card-rounded {
+      border-radius: 18px !important;
+    }
+
+    .card-shadow {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+    }
+
+    .btn-action {
+      width: 44px;
+      height: 44px;
+      font-size: 1.3rem;
+    }
+
+    .accordion-header-tabs {
+      padding: 0.5rem 2rem !important;
+      background-color: var(--header-bg-color) !important;
+    }
+
+    .nav-tabs {
+      border-bottom: none !important;
+    }
+
+    .nav-tabs .nav-link {
+      border: none;
+      border-radius: 0.375rem;
+      color: var(--label-color);
+      font-weight: 500;
+    }
+
+    .nav-tabs .nav-link.active {
+      color: var(--primary-color) !important;
+      background-color: var(--light-primary-shade) !important;
+      font-weight: bold;
+    }
+
+    .navbar {
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 0.5rem 1rem;
+    }
+
+    .navbar .nav-link {
+      color: #6c757d;
+      font-weight: 500;
+      padding: 0.5rem 0.5rem;
+    }
+
+    .navbar .nav-link.active {
+      color: #5042a9;
+      background-color: #e9e7f4;
+      border-radius: 0.375rem;
+    }
+
+    .image {
+      width: 150px;
+      height: 65px;
+    }
+
+    .fixed-chat {
+      position: absolute;
+      right: 20px;
+      background-color: #28a745;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+      z-index: 1000;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .Dial-header {
+      background-color: var(--header-bg-color) !important;
+
+    }
+
+    .dial-box {
+      max-width: 220px;
+      background-color: #f8f9fa;
+    }
+
+    .keypad button {
+      border-radius: 0.5rem;
+      font-weight: 600;
+    }
+
+    .action-buttons button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.1s;
+    }
+
+    .action-buttons button:hover {
+      transform: scale(1.1);
+    }
+       .card-rounded { border-radius: 0.5rem; }
+        .card-shadow { box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); }
+        .accordion-header-uniform { background-color: #f8f9fa; padding: 0.75rem 1rem; border-radius: 0.5rem 0.5rem 0 0; }
+        .contact-accordion-header-btn { background: none; border: none; color: #212529; font-size: 1rem; }
+        .table-borderless th, .table-borderless td { border: none; padding: 0.5rem; vertical-align: middle; }
+        .table-light th { background-color: #f8f9fa; }
+        .badge { font-size: 0.75em; }
+        .phone-badge { display: inline-block; min-width: 2rem; text-align: center; }
+        .empty-cell { width: 1rem; }
+        .status-badge { font-size: 0.75em; } 
+        .form-check-input{
+    background-color: #c9c9c9 !important;
+    border: 1px solid #a9a9a9 !important;
 }
-
-.button-section {
-    padding: 30px;
+.table>:not(caption)>*>*{
+  border: 1px solid #dedede;
 }
-
-.button-demo {
-    margin-bottom: 15px;
+.fs-11{
+  font-size: small;
+  font-weight: 500;
 }
-
-.btn {
-    border-radius: 5px;
+.font-smaller{
+  font-size: smaller;
 }
+.dial-header {
+      background: #f8f9fa;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
 
-.image {
-    height: 50px;
-    width: 100px;
-}
+    .dial-header h5 {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+    }
+    .btn-group .btn {
+      font-size: 12px;
+      font-weight: 500;
+      border-radius: 6px !important;
+    }
 
-.navbar {
-    color: #fff !important;
-    margin-bottom: 25px;
-}
+    .btn-yellow {
+      background-color: #ffc107;
+      color: #000;
+    }
 
-/* Custom styles for your navbar links */
-.navbar-custom .nav-link {
+    .btn-yellow:hover {
+      background-color: transparent;
+      color: #ffc107;
+      border: 1px solid #ffc107;
+    }
 
-    color: #333;
-    transition: color 0.3s ease;
-}
+    .btn-gray {
+      background-color: #6c757d;
+      color: #fff;
+    }
+    .accordion-header-uniform {
+      background-color: #f8f9fa;
+      padding: 10px 15px;
+      border-radius: 6px;
+    }
+    .bg-light-gray{
+        background-color: #f7f7f7;
+    }
 
-.navbar-custom .nav-link.active {
-    color: #171819 !important;
-    background-color: #f0f0f0 !important;
-    ;
-}
+    .nav-tab-btn {
+      font-size: 14px;
+      font-weight: 500;
+      color: #495057;
+      border: 1px solid #dee2e6;
+      border-radius: 20px;
+      padding: 5px 14px;
+      background-color: #fff;
+      transition: all 0.2s ease;
+    }
 
-.navbar-custom {
-    background-color: #fff !important;
-    ;
-}
+    .nav-tab-btn.active {
+      background-color: #e9e7f4;
+      color: #5042a9;
+      border-color: #5042a9;
+    }
 
-.navbar-custom .nav-link,
-.navbar-custom .navbar-brand {
-    color: #121111 !important;
-}
+    .position-sickyt-col-4::-webkit-scrollbar {
+      display: none;
+    }
 
-.navbar-custom .nav-link:hover {
-    color: #556083 !important;
-}
+    .tab-content {
+      /* border: 1px solid #dee2e6; */
+      border-radius: 6px;
+      padding: 15px;
+      background-color: #fff;
+      margin-top: 10px;
+    }
 
-/* Light grey background for accordion header */
-.accordion-button.contact-accordion {
-    background-color: #f0f0f0 !important;
-    /* light grey */
-    color: #333;
-}
+    table {
+      font-size: 14px;
+    }
+       .dialer-compact-container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .keypad-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .keypad-btn {
+            padding: 0.8rem 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+            background-color: #f7f7f7 !important;
+            border: 1px solid var(--border-color);
+        }
+        .secondary-controls-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        .secondary-controls-row .btn {
+            padding: 0.3rem 0.5rem;
+            font-size: 0.85rem;
+            flex-grow: 1;
+            min-width: 90px;
+            max-width: 150px;
+        }
+        .accordion-item {
+            border: none;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
 
-/* Optional: change background color on hover/focus */
-.accordion-button.contact-accordion:not(.collapsed):focus,
-.accordion-button.contact-accordion:not(.collapsed):hover {
-    background-color: #e4e4e4 !important;
-}
+        .accordion-header {
+            background-color: var(--header-bg-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 0;
+        }
+       .btn-primary-custom{
+        background-color: transparent; border: solid #5042a9; color: #5042a9;
+       }
+       .btn-primary-custom:hover{
+        background-color: #5042a9; border: solid #5042a9; color: #fff;
+       }
 
-/* Add spacing between icon and text */
-.accordion-button.contact-accordion i {
-    margin-right: 8px;
-    font-size: 1.2rem;
-}
+        .accordion-body {
+            background-color: var(--card-bg-color);
+            padding: 2rem;
+        }
+       
 
-.custom-collapse-btn::after {
-    filter: brightness(0);
-    /* converts arrow to black */
-}
+        .accordion-header > div {
+            padding: 1.25rem 2rem;
+        }
 
-.accordion-header {
-    background-color: #e4e4e4 !important;
-}
+        .accordion-header .btn {
+            color: var(--text-color);
+            font-weight: 700;
+            font-size: 1.3rem;
+            padding: 0;
+        }
 
-.message {
-    background-color: #5cb85c !important;
-}
-
-.Dial-header {
-    background-color: #e4e4e4 !important;
-
-}
-
-.dial-box {
-    max-width: 220px;
-    background-color: #f8f9fa;
-}
-
-/* Keypad Buttons */
-.keypad button {
-    border-radius: 0.5rem;
-    font-weight: 600;
-}
-
-/* Action Buttons */
-.action-buttons button {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.1s;
-}
-
-.action-buttons button:hover {
-    transform: scale(1.1);
-}
+        .ck.ck-editor__main>.ck-editor__editable:not(.ck-focused){
+            height: 200px;
+        }
