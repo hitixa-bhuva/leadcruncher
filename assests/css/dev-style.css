@@ -349,3 +349,148 @@
         .ck.ck-editor__main>.ck-editor__editable:not(.ck-focused){
             height: 200px;
         }
+        .column {
+    flex: 1;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* --- Menu Container & Positioning --- */
+
+.menu-container {
+    position: relative;
+    /* This display inline-block is important for hover effect */
+    display: inline-block; 
+}
+
+/* Button style for 'Status' header */
+.menu-button {
+    background-color: #3e4a52; /* Dark grey color */
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px; /* Spacing for the list items below it */
+}
+
+/* --- Dropdown List Styles --- */
+
+.dropdown-list {
+    display: none; /* KEY: Hidden by default */
+    position: absolute; /* Position relative to .menu-container */
+    min-width: 100%;
+    z-index: 10;
+    background: white; 
+    padding: 0; 
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top: 100%; 
+    left: -114%;
+    width: 200px;
+}
+
+/* The actual menu items */
+.menu-item {
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: start;
+    font-size: 14px;
+    border-radius: 4px;
+    margin: 3px 0;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    opacity: 0.85;
+}
+
+
+/* --- Hover Effect (The Magic) --- */
+
+/* Show the dropdown list when the Status container is hovered */
+.status-menu:hover .dropdown-list {
+    display: block;
+}
+
+
+/* --- Color Classes (Mapping to the Image) --- */
+
+/* Status Colors */
+.menu-item.green { background-color: #5cb85c; }
+.menu-item.red-pink { background-color: #d9534f; } /* Used a common Bootstrap red for similar look */
+.menu-item.blue { background-color: #337ab7; }
+.menu-item.yellow { background-color: #f0ad4e; color: #333; }
+.menu-item.grey { background-color: #ddd; color: #333; }
+
+/* Disposition Colors */
+.menu-container.disposition-menu .menu-item {
+    min-width: 100%;
+    text-align: left;
+    margin: 2px 0;
+}
+.menu-item.light-grey { background-color: #ccc; color: #333; }
+.menu-item.yellow-gold { background-color: #ffc107; color: #333; }
+.menu-item.red { background-color: #dc3545; }
+.menu-item.dark-blue { background-color: #17a2b8; }
+.menu-item.delete-item { background-color: #dc3545; }
+.menu-item.delete-item::before { content: "🗑️ "; } /* Simple icon for delete */
+
+
+/* --- Checkmark/Icon Styling --- */
+
+/* Shared styles for both checked and icon items */
+.menu-item.checked {
+    padding-left: 30px;
+    /* Add the checkmark */
+    position: relative;
+}
+
+.menu-item.checked::before {
+    content: "✓";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4CAF50; /* Green checkmark */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu-item.icon-item::before {
+    /* M letter for 'Move to CRM' */
+    content: "📈"; 
+    margin-right: 5px;
+}
+
+
+/* --- Special Case: Disposition List (Always Visible) --- */
+
+/* For the Disposition list, we want it to always be block-level, not a dropdown */
+.disposition-menu .dropdown-list.always-visible {
+    display: block;
+    position: static; /* Removes absolute positioning */
+    box-shadow: none; /* No shadow needed as it's not a hovering dropdown */
+    padding: 0;
+    background: none;
+}
+.btn-primary-purple{
+  background-color: #5042a9;
+  color: #fff;
+}
+.btn-primary-purple:hover{
+  background-color: transparent;
+  color: #5042a9;
+  border: 1px solid #5042a9;
+}
