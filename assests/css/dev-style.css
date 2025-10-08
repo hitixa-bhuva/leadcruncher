@@ -31,6 +31,18 @@
     .accordion-header-uniform {
       padding: 1.25rem 2rem !important;
       background-color: var(--header-bg-color) !important;
+      cursor: grab; /* 🔹 Added for drag handle look */
+      user-select: none; /* 🔹 Added for drag handle */
+    }
+    .accordion-header-uniform:active {
+      cursor: grabbing; /* 🔹 Added for drag handle */
+    }
+    .sortable-chosen {
+      transform: scale(1.02);
+      transition: transform 0.2s ease;
+    }
+    .sortable-ghost {
+      opacity: 0.5;
     }
 
     .data-item {
