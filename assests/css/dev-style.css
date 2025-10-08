@@ -216,7 +216,7 @@
 }
 .dial-header {
       background: #f8f9fa;
-      padding: 10px 20px;
+      padding: 10px 20px 10px 13px;
       display: flex;
       align-items: center;
       gap: 10px;
@@ -229,9 +229,10 @@
       display: flex;
       align-items: center;
       font-weight: 700;
+      font-size: 25px;
     }
     .btn-group .btn {
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 500;
       border-radius: 6px !important;
     }
