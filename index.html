@@ -287,7 +287,7 @@
 
           <div>
             <div class="btn-group">
-              <button class="fw-bold btn btn-sm btn-danger dropdown-toggle" data-bs-toggle="dropdown">Filter
+              <button class="fw-bold btn btn-sm btn-outline-main dropdown-toggle" data-bs-toggle="dropdown">Filter
                 Disposition</button>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">All</a></li>
@@ -295,13 +295,16 @@
                 <li><a class="dropdown-item" href="#">Pending</a></li>
               </ul>
             </div>
-
             <div class="btn-group">
-              <button class="fw-bold btn btn-sm btn-success dropdown-toggle">+1 (870) 771-3981</button>
+              <button class="fw-bold btn btn-sm btn-outline-main dropdown-toggle" data-bs-toggle="dropdown">+1 (870) 771-3981</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">+1 (870) 771-3981</a></li>
+                <li><a class="dropdown-item" href="#">+1 (870) 771-3981</a></li>
+              </ul>
             </div>
 
             <div class="btn-group">
-              <button class="fw-bold btn btn-sm btn-warning dropdown-toggle" data-bs-toggle="dropdown">Script
+              <button class="fw-bold btn btn-sm btn-outline-main dropdown-toggle" data-bs-toggle="dropdown">Script
                 (California Sell Property)</button>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">California Region Hot Deals</a></li>
@@ -310,7 +313,7 @@
             </div>
 
             <div class="btn-group">
-              <button class="fw-bold btn btn-sm btn-yellow dropdown-toggle" data-bs-toggle="dropdown">Select Voice
+              <button class="fw-bold btn btn-sm btn-outline-main dropdown-toggle" data-bs-toggle="dropdown">Select Voice
                 Mail</button>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Default Mail</a></li>
@@ -319,20 +322,28 @@
             </div>
 
             <div class="btn-group">
-              <button class="fw-bold btn btn-sm btn-yellow"><i class="bi bi-printer"></i> Print</button>
+              <button class="fw-bold btn btn-sm btn-outline-main"><i class="bi bi-printer"></i> Print</button>
             </div>
             <div class="btn-group">
-              <button class="fw-bold btn btn-sm btn-primary"><i class="bi bi-skip-forward-fill"></i> Skip Trace</button>
+              <button class="fw-bold btn btn-sm btn-outline-main"><i class="bi bi-skip-forward-fill"></i> Skip Trace</button>
 
             </div>
             <div class="btn-group">
-              <button class="fw-bold btn btn-sm btn-info text-white"><i class="bi bi-pencil"></i> Edit</button>
+              <button class="fw-bold btn btn-sm btn-outline-main "><i class="bi bi-pencil"></i> Edit</button>
 
             </div>
             <div class="btn-group">
-              <button class="fw-bold btn btn-sm btn-gray"><i class="bi bi-arrow-return-left"></i> All Contacts</button>
+              <button class="fw-bold btn btn-sm btn-outline-main "><i class="bi bi-arrow-return-left"></i> All Contacts</button>
 
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-xl-8 col-lg-8 mb-4 mb-lg-0 bg-light-gray">
+          <div class="mb-3 mt-3">
             <div class="btn-group">
               <div class="column">
                 <div class="menu-container status-menu">
@@ -374,14 +385,7 @@
               </div>
 
             </div>
-
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row justify-content-center mb-5">
-        <div class="col-xl-8 col-lg-8 mb-4 mb-lg-0 bg-light-gray">
           <div class="accordion card-rounded card-shadow bg-white overflow-hidden" id="accordionExample">
             <div class="accordion-item border-0">
               <h2 class="accordion-header">
@@ -396,11 +400,11 @@
                       title="Edit Contact">
                       <i class="bi bi-pencil-square text-muted"></i>
                     </button>
-                    <button class="btn btn-sm btn-action rounded-circle bg-light-primary-shade" type="button"
-                      data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                      aria-controls="collapseOne" id="chevron-btn-contact">
-                      <i class="bi bi-chevron-up text-muted"></i>
-                    </button>
+                    <button class="btn btn-sm btn-action rounded-circle bg-light-primary-shade"
+                          type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                          aria-expanded="true" aria-controls="collapseOne" id="chevron-btn-one">
+                    <i class="bi bi-chevron-up text-muted"></i>
+                  </button>
                   </div>
                 </div>
               </h2>
@@ -467,12 +471,12 @@
 
                       <div class="info-group mt-4">
                         <h5 class="mb-3 text-primary fs-6 fw-bold">External Resources</h5>
-                        <div class="data-item">
-                          <div class="data-label fw-medium">Market Links</div>
+                        <div class="data-item" style="grid-template-columns: 25% 75%;">
+                          <div class="data-label fw-medium">Links</div>
                           <div class="data-value">
-                            <a href="#" class="text-primary fw-medium me-3 text-decoration-none">Zillow</a>
-                            <a href="#" class="text-primary fw-medium me-3 text-decoration-none">Redfin</a>
-                            <a href="#" class="text-primary fw-medium text-decoration-none">AreaZoom</a>
+                            <a href="#" class="text-primary fw-medium me-3 text-decoration-none">Zillow <i class="bi bi-box-arrow-up-right"></i></a>
+                            <a href="#" class="text-primary fw-medium me-3 text-decoration-none">Redfin <i class="bi bi-box-arrow-up-right"></i></a>
+                            <a href="#" class="text-primary fw-medium text-decoration-none">AreaZoom <i class="bi bi-box-arrow-up-right"></i></a>
                           </div>
                         </div>
                       </div>
@@ -490,18 +494,18 @@
                 <h2 class="mb-0">
                   <div class="d-flex align-items-center justify-content-between accordion-header-uniform">
                     <button class="btn p-0 text-dark fw-bold fs-5 collapsed text-start" type="button"
-                      data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
-                      aria-controls="collapseOne">
+                      data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                      aria-controls="collapseTwo">
                       <i class="bi bi-headset me-3 text-primary"></i>
                       Call Controls
                     </button>
 
                     <div class="d-flex align-items-center" id="historyTab" role="tablist">
 
-                      <button class="btn btn-sm btn-action rounded-circle bg-light-primary-shade collapsed"
-                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                        aria-controls="collapseTwo" id="chevron-btn-contact">
-                        <i class="bi bi-chevron-up text-muted"></i>
+                      <button class="btn btn-sm btn-action rounded-circle bg-light-primary-shade mt-3"
+                              type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                              aria-expanded="false" aria-controls="collapseTwo" id="chevron-btn-two">
+                        <i class="bi bi-chevron-down text-muted"></i>
                       </button>
                     </div>
                   </div>
@@ -574,7 +578,7 @@
                   <h2 class="mb-0">
                     <div class="d-flex align-items-center justify-content-between accordion-header-uniform">
                       <button class="btn p-0 text-dark fw-bold fs-5" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
                         <i class="bi bi-envelope me-2 text-primary"></i>
                         Phone & Email History
                       </button>
@@ -588,12 +592,11 @@
                           type="button" role="tab" aria-controls="email" aria-selected="false">
                           Email
                         </button>
-
-                        <button class="btn btn-sm btn-action rounded-circle bg-light-primary-shade" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true"
-                          aria-controls="collapseEight" id="chevron-btn-contact">
-                          <i class="bi bi-chevron-up text-muted"></i>
-                        </button>
+                        <button class="btn btn-sm btn-action rounded-circle bg-light-primary-shade mt-3"
+                              type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight"
+                              aria-expanded="false" aria-controls="collapseEight" id="chevron-btn-eight">
+                        <i class="bi bi-chevron-down text-muted"></i>
+                      </button>
                       </div>
                     </div>
                   </h2>
@@ -604,15 +607,10 @@
                       <!-- phone History -->
                       <div class="tab-pane fade show active" id="phone" role="tabpanel" aria-labelledby="phone-tab">
                         <!-- <h6 class="fw-bold mb-3">Call History</h6> -->
-                        <div class="top-action-bar d-flex align-items-center mb-3 mt-3">
-                          <button class="btn btn-sm btn-call me-2"><i class="bi bi-telephone-fill me-1"></i>
-                            Call</button>
-                          <button class="btn btn-sm btn-hangup me-2"><i class="bi bi-telephone-x-fill me-1"></i> Hang
-                            Up</button>
-                          <button class="btn btn-sm btn-text me-2"><i class="bi bi-chat-fill me-1"></i> Text</button>
-                          <button class="btn btn-sm btn-help rounded-circle p-0" title="Help">
-                            <i class="bi bi-question-circle"></i>
-                          </button>
+                        <div class="top-action-bar d-flex align-items-center mb-3 mt-3 gap-2">
+                          <button class="btn btn-success rounded-circle p-2"><i class="bi bi-telephone-fill me-1"></i></button>
+                          <button class="btn btn-danger rounded-circle p-2"><i class="bi bi-telephone-x-fill me-1"></i></button>
+                          <button class="btn btn-info rounded-circle text-white p-2"><i class="bi bi-chat-fill me-1"></i></button>
                         </div>
                         <table class="table table-borderless align-middle mt-3">
 
@@ -667,8 +665,8 @@
                               <td class="text-center"><input type="checkbox" class="form-check-input"></td>
                               <td class="text-center">
                                 <label class="form-switch-custom">
-                                  <input type="checkbox" id="phone-status-1" checked="">
-                                  <label for="phone-status-1" title="Verified/Preferred"></label>
+                                  <input type="checkbox" id="phone-status-2">
+                                  <label for="phone-status-2" title="Verified/Preferred"></label>
                                 </label>
                               </td>
                               <td class="text-center"><i class="bi bi-play-circle-fill rec-icon"></i></td>
@@ -754,7 +752,7 @@
                   <h2 class="mb-0">
                     <div class="d-flex align-items-center justify-content-between accordion-header-uniform">
                       <button class="btn p-0 text-dark fw-bold fs-5" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        data-bs-target="#collapsesix" aria-expanded="true" aria-controls="collapsesix">
                         <i class="bi bi-list me-2 text-primary"></i>
                         History
                       </button>
@@ -775,11 +773,11 @@
                           Disposition
                         </button>
 
-                        <button class="btn btn-sm btn-action rounded-circle bg-light-primary-shade" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="true"
-                          aria-controls="collapsesix" id="chevron-btn-contact">
-                          <i class="bi bi-chevron-up text-muted"></i>
-                        </button>
+                        <button class="btn btn-sm btn-action rounded-circle bg-light-primary-shade mt-3 collapsed"
+                          type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix"
+                          aria-expanded="false" aria-controls="collapsesix" id="chevron-btn-six">
+                    <i class="bi bi-chevron-down text-muted"></i>
+                  </button>
                       </div>
                     </div>
                   </h2>
@@ -986,7 +984,8 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-lg-4 position-sticky end-0 top-0 position-sickyt-col-4 px-2 bg-light-gray"
+      
+        <div class="col-lg-4 sticky-col bg-light p-3 position-sickyt-col-4"
           style="height: 100vh; overflow-y: auto;">
           <div class="accordion card-rounded card-shadow bg-white overflow-hidden mb-3" id="accordionScript">
             <div class="accordion-item border-0">
@@ -998,19 +997,20 @@
                     Script
                   </button>
                   <div class="d-flex align-items-center">
-                    <button class="btn btn-sm btn-action me-2 rounded-circle bg-light-primary-shade"
+                    <!-- <button class="btn btn-sm btn-action me-2 rounded-circle bg-light-primary-shade"
                       title="Swap Script">
                       <i class="bi bi-arrow-down-up text-muted"></i>
+                    </button> -->
+                    <button class="btn btn-sm btn-action rounded-circle bg-light-primary-shade collapsed"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseseven"
+                            aria-expanded="false" aria-controls="collapseseven" id="chevron-btn-seven">
+                      <i class="bi bi-chevron-down text-muted"></i>
                     </button>
-                    <button class="btn btn-sm btn-action rounded-circle bg-light-primary-shade" type="button"
-                      data-bs-toggle="collapse" data-bs-target="#collapsesevern" aria-expanded="true"
-                      aria-controls="collapsesevern" id="chevron-btn-script">
-                      <i class="bi bi-chevron-up text-muted"></i>
-                    </button>
+
                   </div>
                 </div>
               </h2>
-              <div id="collapsesevern" class="accordion-collapse collapse show" data-bs-parent="#accordionScript">
+              <div id="collapseseven" class="accordion-collapse collapse show" data-bs-parent="#accordionScript">
                 <div class="accordion-body p-4 component-card">
                   <p>Hello Albright Family,</p>
                   <p>
@@ -1035,15 +1035,15 @@
                     Interactions
                   </button>
                   <div class="d-flex align-items-center">
-                    <button class="btn btn-sm btn-action me-2 rounded-circle bg-light-primary-shade"
+                    <!-- <button class="btn btn-sm btn-action me-2 rounded-circle bg-light-primary-shade"
                       title="Swap Script">
                       <i class="bi bi-arrow-down-up text-muted"></i>
-                    </button>
-                    <button class="btn btn-sm btn-action rounded-circle bg-light-primary-shade" type="button"
-                      data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true"
-                      aria-controls="collapseThree" id="chevron-btn-script">
-                      <i class="bi bi-chevron-up text-muted"></i>
-                    </button>
+                    </button> -->
+                    <button class="btn btn-sm btn-action rounded-circle bg-light-primary-shade mt-3"
+                          type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                          aria-expanded="false" aria-controls="collapseThree" id="chevron-btn-three">
+                    <i class="bi bi-chevron-down text-muted"></i>
+                  </button>
                   </div>
 
               </h2>
@@ -1235,27 +1235,45 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      function setupChevronToggle(btnId, collapseId) {
-        const chevronBtn = document.getElementById(btnId);
-        const collapseDiv = document.getElementById(collapseId);
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    function setupChevronToggle(btnId, collapseId) {
+      const chevronBtn = document.getElementById(btnId);
+      const collapseDiv = document.getElementById(collapseId);
 
-        if (chevronBtn && collapseDiv) {
-          collapseDiv.addEventListener("show.bs.collapse", () => {
-            chevronBtn.innerHTML = '<i class="bi bi-chevron-up text-muted"></i>';
-          });
-          collapseDiv.addEventListener("hide.bs.collapse", () => {
-            chevronBtn.innerHTML = '<i class="bi bi-chevron-down text-muted"></i>';
-          });
+      if (chevronBtn && collapseDiv) {
+        const iconUp = '<i class="bi bi-chevron-up text-muted"></i>';
+        const iconDown = '<i class="bi bi-chevron-down text-muted"></i>';
+
+        // Set initial icon state based on collapse visibility
+        if (collapseDiv.classList.contains("show")) {
+          chevronBtn.innerHTML = iconUp;
+        } else {
+          chevronBtn.innerHTML = iconDown;
         }
-      }
 
-      setupChevronToggle("chevron-btn-contact", "collapseOne");
-      setupChevronToggle("chevron-btn-script", "collapseTwo");
-      setupChevronToggle("chevron-btn-new", "collapseThree"); // New component
-    });
-  </script>
+        // On show event
+        collapseDiv.addEventListener("show.bs.collapse", () => {
+          chevronBtn.innerHTML = iconUp;
+        });
+
+        // On hide event
+        collapseDiv.addEventListener("hide.bs.collapse", () => {
+          chevronBtn.innerHTML = iconDown;
+        });
+      }
+    }
+
+    // Initialize all collapses
+    setupChevronToggle("chevron-btn-one", "collapseOne");
+    setupChevronToggle("chevron-btn-two", "collapseTwo");
+    setupChevronToggle("chevron-btn-three", "collapseThree");
+    setupChevronToggle("chevron-btn-six", "collapsesix");
+    setupChevronToggle("chevron-btn-seven", "collapseseven");
+    setupChevronToggle("chevron-btn-eight", "collapseEight");
+  });
+</script>
+
 
 </body>
 
