@@ -1,534 +1,595 @@
  :root {
-      --primary-color: #5042a9;
-      --light-primary-shade: #e9e7f4;
-      --label-color: #6c757d;
-      --header-bg-color: #fafafa;
-      --danger-light: #fbe5e7;
-    }
-    .text-primary {
-      color: var(--primary-color) !important;
-    }
-
-    .bg-light-primary-shade {
-      background-color: var(--light-primary-shade) !important;
-    }
-
-    .bg-light-primary-shade:hover {
-      opacity: 0.9;
-    }
-
-    .text-muted {
-      color: var(--label-color) !important;
-    }
-
-    .btn-light-danger {
-      background-color: var(--danger-light) !important;
-      color: #dc3545 !important;
-      border-color: var(--danger-light) !important;
-    }
-
-    /* 2. Uniform Header Dimensions */
-    .accordion-header-uniform {
-      padding: 1.25rem 2rem !important;
-      background-color: var(--header-bg-color) !important;
-      cursor: grab; /* 🔹 Added for drag handle look */
-      user-select: none; /* 🔹 Added for drag handle */
-    }
-    .accordion-header-uniform:active {
-      cursor: grabbing; /* 🔹 Added for drag handle */
-    }
-    .sortable-chosen {
-      transform: scale(1.02);
-      transition: transform 0.2s ease;
-    }
-    .sortable-ghost {
-      opacity: 0.5;
-    }
-
-    .data-item {
-      display: grid;
-      grid-template-columns: 35% 65%;
-      gap: 10px;
-      align-items: center;
-    }
-
-    .data-label {
-      color: var(--label-color);
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-    }
-
-    @media (min-width: 992px) {
-      .horizontal-layout {
-        display: grid;
-        grid-template-columns: 1fr 1px 1fr;
-        gap: 2rem;
-      }
-
-      .horizontal-divider {
-        background-color: var(--bs-border-color);
-      }
-    }
-
-    .chat-messages {
-      height: 250px;
-    }
-
-    .chat-messages .message {
-      max-width: 75%;
-      word-break: break-word;
-    }
-
-    .chat-messages .badge {
-      font-weight: 500;
-      text-align: left;
-    }
-
-    .chat-messages .bg-success {
-      background-color: #28a745 !important;
-    }
-
-    .card-rounded {
-      border-radius: 18px !important;
-    }
-
-    .card-shadow {
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
-    }
-
-    .btn-action {
-      width: 44px;
-      height: 44px;
-      font-size: 1.3rem;
-    }
-
-    .accordion-header-tabs {
-      padding: 0.5rem 2rem !important;
-      background-color: var(--header-bg-color) !important;
-    }
-
-    .nav-tabs {
-      border-bottom: none !important;
-    }
-
-    .nav-tabs .nav-link {
-      border: none;
-      border-radius: 0.375rem;
-      color: var(--label-color);
-      font-weight: 500;
-    }
-
-    .nav-tabs .nav-link.active {
-      color: var(--primary-color) !important;
-      background-color: var(--light-primary-shade) !important;
-      font-weight: bold;
-    }
-
-    .navbar {
-      background-color: #fff;
-      border-bottom: 1px solid #ddd;
-      padding: 0.5rem 1rem;
-    }
-
-    .navbar .nav-link {
-      color: #6c757d;
-      font-weight: 500;
-      padding: 0.5rem 0.5rem;
-    }
-
-    .navbar .nav-link.active {
-      color: #5042a9;
-      background-color: #e9e7f4;
-      border-radius: 0.375rem;
-    }
-
-    .image {
-      width: 150px;
-      height: 65px;
-    }
-
-    .fixed-chat {
-      position: absolute;
-      right: 20px;
-      background-color: #28a745;
-      color: white;
-      padding: 10px;
-      border-radius: 10px;
-      z-index: 1000;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    .Dial-header {
-      background-color: var(--header-bg-color) !important;
-
-    }
-
-    .dial-box {
-      max-width: 220px;
-      background-color: #f8f9fa;
-    }
-
-    .keypad button {
-      border-radius: 0.5rem;
-      font-weight: 600;
-    }
-
-    .action-buttons button {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      font-size: 1.2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: transform 0.1s;
-    }
-
-    .action-buttons button:hover {
-      transform: scale(1.1);
-    }
-       .card-rounded { border-radius: 0.5rem; }
-        .card-shadow { box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); }
-        .accordion-header-uniform { background-color: #f8f9fa; padding: 0.75rem 1rem; border-radius: 0.5rem 0.5rem 0 0; }
-        .contact-accordion-header-btn { background: none; border: none; color: #212529; font-size: 1rem; }
-        .table-borderless th, .table-borderless td { border: none; padding: 0.5rem; vertical-align: middle; }
-        .table-light th { background-color: #f8f9fa; }
-        .badge { font-size: 0.75em; }
-        .phone-badge { display: inline-block; min-width: 2rem; text-align: center; }
-        .empty-cell { width: 1rem; }
-        .status-badge { font-size: 0.75em; } 
-        .form-check-input{
-    background-color: #c9c9c9 !important;
-    border: 1px solid #a9a9a9 !important;
-}
-.table>:not(caption)>*>*{
-  border: 1px solid #dedede;
-}
-.fs-11{
-  font-size: small;
-  font-weight: 500;
-}
-.font-smaller{
-  font-size: smaller;
-}
-.dial-header {
-      background: #f8f9fa;
-      padding: 10px 20px 10px 13px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    .dial-header h5 {
-      margin: 0;
-      display: flex;
-      align-items: center;
-      font-weight: 700;
-      font-size: 25px;
-    }
-    .btn-group .btn {
-      font-size: 14px;
-      font-weight: 500;
-      border-radius: 6px !important;
-    }
-
-    .btn-yellow {
-      background-color: #ffc107;
-      color: #000;
-    }
-
-    .btn-yellow:hover {
-      background-color: transparent;
-      color: #ffc107;
-      border: 1px solid #ffc107;
-    }
-
-    .btn-gray {
-      background-color: #6c757d;
-      color: #fff;
-    }
-    .accordion-header-uniform {
-      background-color: #f8f9fa;
-      padding: 10px 15px;
-      border-radius: 6px;
-    }
-    .bg-light-gray{
-        background-color: #f7f7f7;
-    }
-
-    .nav-tab-btn {
-      font-size: 14px;
-      font-weight: 500;
-      color: #495057;
-      border: 1px solid #dee2e6;
-      border-radius: 20px;
-      padding: 5px 14px;
-      background-color: #fff;
-      transition: all 0.2s ease;
-    }
-
-    .nav-tab-btn.active {
-      background-color: #e9e7f4;
-      color: #5042a9;
-      border-color: #5042a9;
-    }
-
-    .position-sickyt-col-4::-webkit-scrollbar {
-      display: none;
-    }
-
-    .tab-content {
-      /* border: 1px solid #dee2e6; */
-      border-radius: 6px;
-      padding: 15px;
-      background-color: #fff;
-      margin-top: 10px;
-    }
-
-    table {
-      font-size: 14px;
-    }
-       .dialer-compact-container {
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        .keypad-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-        }
-        .keypad-btn {
-            padding: 0.8rem 0;
-            font-size: 1.1rem;
-            font-weight: 600;
-            background-color: #f7f7f7 !important;
-            border: 1px solid var(--border-color);
-        }
-        .secondary-controls-row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 0.5rem;
-            margin-top: 1.5rem;
-        }
-        .secondary-controls-row .btn {
-            padding: 0.3rem 0.5rem;
-            font-size: 0.85rem;
-            flex-grow: 1;
-            min-width: 90px;
-            max-width: 150px;
-        }
-        .accordion-item {
-            border: none;
-            border-radius: 18px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            overflow: hidden;
-        }
-
-        .accordion-header {
-            background-color: var(--header-bg-color);
-            border-bottom: 1px solid var(--border-color);
-            padding: 0;
-        }
-       .btn-primary-custom{
-        background-color: transparent; border: solid #5042a9; color: #5042a9;
-       }
-       .btn-primary-custom:hover{
-        background-color: #5042a9; border: solid #5042a9; color: #fff;
-       }
-
-        .accordion-body {
-            background-color: var(--card-bg-color);
-            padding: 2rem;
-        }
-       
-
-        .accordion-header > div {
-            padding: 1.25rem 2rem;
-        }
-
-        .accordion-header .btn {
-            color: var(--text-color);
-            font-weight: 700;
-            font-size: 1.3rem;
-            padding: 0;
-        }
-
-        .ck.ck-editor__main>.ck-editor__editable:not(.ck-focused){
-            height: 200px;
-        }
-        .column {
-    flex: 1;
-}
-
-h2 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-top: 0;
-    margin-bottom: 15px;
-}
-
-/* --- Menu Container & Positioning --- */
-
-.menu-container {
-    position: relative;
-    /* This display inline-block is important for hover effect */
-    display: inline-block; 
-}
-
-/* Button style for 'Status' header */
-.menu-button {
-    background-color: #3e4a52; /* Dark grey color */
-    color: white;
-    padding: 10px 15px;
-    font-size: 14px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 5px; /* Spacing for the list items below it */
-}
-
-/* --- Dropdown List Styles --- */
-
-.dropdown-list {
-    display: none; /* KEY: Hidden by default */
-    position: absolute; /* Position relative to .menu-container */
-    min-width: 100%;
-    z-index: 10;
-    background: white; 
-    padding: 0; 
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    top: 100%; 
-    left: 0%;
-    width: 200px;
-}
-
-/* The actual menu items */
-.menu-item {
-    color: white;
-    padding: 5px 10px;
-    text-decoration: none;
-    display: block;
-    text-align: start;
-    font-size: 14px;
-    border-radius: 4px;
-    margin: 3px 0;
-    cursor: pointer;
-}
-
-.menu-item:hover {
-    opacity: 0.85;
-}
-
-
-/* --- Hover Effect (The Magic) --- */
-
-/* Show the dropdown list when the Status container is hovered */
-.status-menu:hover .dropdown-list {
-    display: block;
-}
-
-
-/* --- Color Classes (Mapping to the Image) --- */
-
-/* Status Colors */
-.menu-item.green { background-color: #5cb85c; }
-.menu-item.red-pink { background-color: #d9534f; } /* Used a common Bootstrap red for similar look */
-.menu-item.blue { background-color: #337ab7; }
-.menu-item.yellow { background-color: #f0ad4e; color: #333; }
-.menu-item.grey { background-color: #ddd; color: #333; }
-
-/* Disposition Colors */
-.menu-container.disposition-menu .menu-item {
-    min-width: 100%;
-    text-align: left;
-    margin: 2px 0;
-}
-.menu-item.light-grey { background-color: #ccc; color: #333; }
-.menu-item.yellow-gold { background-color: #ffc107; color: #333; }
-.menu-item.red { background-color: #dc3545; }
-.menu-item.dark-blue { background-color: #17a2b8; }
-.menu-item.delete-item { background-color: #dc3545; }
-.menu-item.delete-item::before { content: "🗑️ "; } /* Simple icon for delete */
-
-
-/* --- Checkmark/Icon Styling --- */
-
-/* Shared styles for both checked and icon items */
-.menu-item.checked {
-    padding-left: 30px;
-    /* Add the checkmark */
-    position: relative;
-}
-
-.menu-item.checked::before {
-    content: "✓";
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #4CAF50; /* Green checkmark */
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.menu-item.icon-item::before {
-    /* M letter for 'Move to CRM' */
-    content: "📈"; 
-    margin-right: 5px;
-}
-
-
-/* --- Special Case: Disposition List (Always Visible) --- */
-
-/* For the Disposition list, we want it to always be block-level, not a dropdown */
-.disposition-menu .dropdown-list.always-visible {
-    display: block;
-    position: static; /* Removes absolute positioning */
-    box-shadow: none; /* No shadow needed as it's not a hovering dropdown */
-    padding: 0;
-    background: none;
-}
-.btn-primary-purple{
-  background-color: #5042a9;
-  color: #fff;
-}
-.btn-primary-purple:hover{
-  background-color: transparent;
-  color: #5042a9;
-  border: 1px solid #5042a9;
-}
-
-.btn-outline-main {
-    --bs-btn-color: #5042a9;
-    --bs-btn-border-color: #5042a9;
-    --bs-btn-hover-color: #000;
-    --bs-btn-hover-bg: #5042a9;
-    --bs-btn-hover-border-color: #5042a9;
-    --bs-btn-focus-shadow-rgb: 13, 202, 240;
-    --bs-btn-active-color: #000;
-    --bs-btn-active-bg: #5042a9;
-    --bs-btn-active-border-color: #5042a9;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #5042a9;
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: #5042a9;
-    --bs-gradient: none;
-}
-.btn-outline-main:hover{
-  color: white;
-}
-.sticky-col {
-  position: sticky;
-  top: 0;
-  z-index: 10; /* make sure it’s above background layers */
-}
+   --primary-color: #5042a9;
+   --light-primary-shade: #e9e7f4;
+   --label-color: #6c757d;
+   --header-bg-color: #fafafa;
+   --danger-light: #fbe5e7;
+   --white: #ffffff;
+   --font-size-14: 14px;
+   --border-1px-solid: 1px solid;
+ }
+
+ .text-primary {
+   color: var(--primary-color) !important;
+ }
+
+ .bg-light-primary-shade {
+   background-color: var(--light-primary-shade) !important;
+ }
+
+ .bg-light-primary-shade:hover {
+   opacity: 0.9;
+ }
+
+ .text-muted {
+   color: var(--label-color) !important;
+ }
+
+ .accordion-header-uniform {
+   padding: 1.25rem 2rem !important;
+   background-color: var(--header-bg-color) !important;
+   cursor: grab;
+   user-select: none;
+   border-radius: 0.5rem 0.5rem 0 0;
+ }
+
+ .accordion-header-uniform:active {
+   cursor: grabbing;
+ }
+
+ .sortable-chosen {
+   transform: scale(1.02);
+   transition: transform 0.2s ease;
+ }
+
+ .sortable-ghost {
+   opacity: 0.5;
+ }
+
+ .data-item {
+   grid-template-columns: 35% 65%;
+ }
+
+ .data-label {
+   color: var(--label-color);
+   font-size: 0.9rem;
+   text-transform: uppercase;
+   letter-spacing: 0.8px;
+ }
+
+ @media (min-width: 992px) {
+   .horizontal-layout {
+     display: grid;
+     grid-template-columns: 1fr 1px 1fr;
+     gap: 2rem;
+   }
+
+   .horizontal-divider {
+     background-color: var(--bs-border-color);
+   }
+ }
+
+ .chat-messages {
+   height: 250px;
+ }
+
+ .chat-messages .message {
+   max-width: 75%;
+   word-break: break-word;
+ }
+
+ .chat-messages .badge {
+   font-weight: 500;
+   text-align: left;
+ }
+
+ .chat-messages .bg-success {
+   background-color: #28a745 !important;
+ }
+
+ .card-rounded {
+   border-radius: 18px !important;
+ }
+
+ .card-shadow {
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+ }
+
+ .btn-action {
+   width: 44px;
+   height: 44px;
+   font-size: 1.3rem;
+ }
+
+ .nav-tabs {
+   border-bottom: none !important;
+ }
+
+ .nav-tabs .nav-link {
+   border: none;
+   border-radius: 0.375rem;
+   color: var(--label-color);
+   font-weight: 500;
+ }
+
+ .nav-tabs .nav-link.active {
+   color: var(--primary-color) !important;
+   background-color: var(--light-primary-shade) !important;
+   font-weight: bold;
+ }
+
+ .navbar {
+   background-color: var(--white);
+   border-bottom: var(--border-1px-solid) #ddd;
+   padding: 0.5rem 1rem;
+ }
+
+ .navbar .nav-link {
+   color: var(--label-color);
+   font-weight: 500;
+   padding: 0.5rem 0.5rem;
+ }
+
+ .navbar .nav-link.active {
+   color: var(--primary-color);
+   background-color: var(--light-primary-shade);
+   border-radius: 0.375rem;
+ }
+
+ .image {
+   width: 150px;
+   height: 65px;
+ }
+
+ .fixed-chat {
+   right: 20px;
+   background-color: #28a745;
+   color: var(--white);
+   border-radius: 10px;
+   z-index: 1000;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+ }
+
+ .keypad button {
+   border-radius: 0.5rem;
+   font-weight: 600;
+ }
+
+ .table-borderless th,
+ .table-borderless td {
+   border: none;
+   padding: 0.5rem;
+   vertical-align: middle;
+ }
+
+ .table-light th {
+   background-color: #f8f9fa;
+ }
+
+ .badge {
+   font-size: 0.75em;
+ }
+
+ .form-check-input {
+   background-color: #c9c9c9 !important;
+   border: var(--border-1px-solid) #a9a9a9 !important;
+ }
+
+ .table>:not(caption)>*>* {
+   border: var(--border-1px-solid) #dedede;
+ }
+
+ .dial-header {
+   background: #f8f9fa;
+   padding: 10px 20px 10px 13px;
+   background-color: var(--header-bg-color) !important;
+
+ }
+
+ .dial-header h5 {
+   font-weight: 700;
+   font-size: 25px;
+ }
+
+ .btn-group .btn {
+   font-size: var(--font-size-14);
+   font-weight: 500;
+   border-radius: 6px !important;
+ }
+
+ .bg-light-gray {
+   background-color: #f7f7f7;
+ }
+
+ .nav-tab-btn {
+   font-size: var(--font-size-14);
+   font-weight: 500;
+   color: #495057;
+   border: var(--border-1px-solid) #dee2e6;
+   border-radius: 20px;
+   padding: 5px var(--font-size-14);
+   background-color: var(--white);
+   transition: all 0.2s ease;
+ }
+
+ .nav-tab-btn.active {
+   background-color: var(--light-primary-shade);
+   color: var(--primary-color);
+   border-color: var(--primary-color);
+ }
+
+ .position-sickyt-col-4::-webkit-scrollbar {
+   display: none;
+ }
+
+ .tab-content {
+   border-radius: 6px;
+   padding: 15px;
+   background-color: var(--white);
+   margin-top: 10px;
+ }
+
+ table {
+   font-size: var(--font-size-14);
+ }
+
+ .dialer-compact-container {
+   max-width: 400px;
+   margin: 0 auto;
+ }
+
+ .keypad-grid {
+   grid-template-columns: repeat(3, 1fr);
+ }
+
+ .keypad-btn {
+   padding: 0.8rem 0;
+   font-size: 1.1rem;
+   font-weight: 600;
+   background-color: #f7f7f7 !important;
+   border: var(--border-1px-solid) var(--border-color);
+ }
+
+ .secondary-controls-row .btn {
+   padding: 0.3rem 0.5rem;
+   font-size: 0.85rem;
+   flex-grow: 1;
+   min-width: 90px;
+   max-width: 150px;
+ }
+
+ .accordion-item {
+   border: none;
+   border-radius: 18px;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+   overflow: hidden;
+ }
+
+ .accordion-header {
+   background-color: var(--header-bg-color);
+   border-bottom: var(--border-1px-solid) var(--border-color);
+   padding: 0;
+ }
+
+ .btn-primary-custom {
+   background-color: transparent;
+   border: solid var(--primary-color);
+   color: var(--primary-color);
+ }
+
+ .btn-primary-custom:hover {
+   background-color: var(--primary-color);
+   border: solid var(--primary-color);
+   color: var(--white);
+ }
+
+ .accordion-body {
+   background-color: var(--card-bg-color);
+   padding: 2rem;
+ }
+
+
+ .accordion-header>div {
+   padding: 1.25rem 2rem;
+ }
+
+ .accordion-header .btn {
+   color: var(--text-color);
+   font-weight: 700;
+   font-size: 1.3rem;
+   padding: 0;
+ }
+
+ .ck.ck-editor__main>.ck-editor__editable:not(.ck-focused) {
+   height: 200px;
+ }
+
+ .column {
+   flex: 1;
+ }
+
+ h2 {
+   font-size: 18px;
+   font-weight: bold;
+   color: #333;
+   margin-top: 0;
+   margin-bottom: 15px;
+ }
+
+ .dropdown-list {
+   display: none;
+   position: absolute;
+   min-width: 100%;
+   z-index: 10;
+   background: var(--white);
+   padding: 0;
+   border-radius: 4px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   top: 100%;
+   left: 0%;
+   width: 200px;
+ }
+
+ .menu-item {
+   color: var(--white);
+   padding: 5px 10px;
+   font-size: var(--font-size-14);
+   border-radius: 4px;
+   margin: 3px 0;
+   cursor: pointer;
+ }
+
+ .menu-item:hover {
+   opacity: 0.85;
+ }
+
+ .status-menu:hover .dropdown-list {
+   display: block;
+ }
+
+ .menu-item.checked {
+   padding-left: 30px;
+   position: relative;
+ }
+
+ .menu-item.checked::before {
+   content: "✓";
+   position: absolute;
+   left: 10px;
+   top: 50%;
+   transform: translateY(-50%);
+   color: #4CAF50;
+   font-weight: bold;
+   font-size: 16px;
+ }
+
+ .btn-primary-purple {
+   background-color: var(--primary-color);
+   color: var(--white);
+ }
+
+ .btn-primary-purple:hover {
+   background-color: transparent;
+   color: var(--primary-color);
+   border: var(--border-1px-solid) var(--primary-color);
+ }
+
+ .btn-outline-main {
+   --bs-btn-color: var(--primary-color);
+   --bs-btn-border-color: var(--primary-color);
+   --bs-btn-hover-color: #000;
+   --bs-btn-hover-bg: var(--primary-color);
+   --bs-btn-hover-border-color: var(--primary-color);
+   --bs-btn-focus-shadow-rgb: 13, 202, 240;
+   --bs-btn-active-color: #000;
+   --bs-btn-active-bg: var(--primary-color);
+   --bs-btn-active-border-color: var(--primary-color);
+   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+   --bs-btn-disabled-color: var(--primary-color);
+   --bs-btn-disabled-bg: transparent;
+   --bs-btn-disabled-border-color: var(--primary-color);
+   --bs-gradient: none;
+ }
+
+ .btn-outline-main:hover {
+   color: var(--white);
+ }
+
+ .sticky-col {
+   position: sticky;
+   top: 0;
+   z-index: 10;
+ }
+
+ #collapsesix .tab-pane {
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+ }
+
+ #collapsesix .table {
+   width: 100%;
+   margin: 0;
+   border-collapse: separate;
+   border-spacing: 0;
+ }
+
+ #collapsesix .table thead th {
+   background-color: #f8f9fa;
+   font-weight: 600;
+   border-bottom: 2px solid #dee2e6;
+   text-align: center;
+ }
+
+ #collapsesix .table td {
+   vertical-align: middle;
+   padding: 10px 8px;
+ }
+
+ #collapsesix .table tbody tr:hover {
+   background-color: #f9f9f9;
+ }
+
+ #collapsesix .badge {
+   font-size: 0.75rem;
+   padding: 0.4em 0.6em;
+ }
+
+ .top-action-bar .btn-call {
+   background-color: #28a745;
+   color: var(--white);
+   font-weight: 600;
+   padding: 0.375rem 0.75rem;
+ }
+
+ .top-action-bar .btn-hangup {
+   background-color: #dc3545;
+   color: var(--white);
+   font-weight: 600;
+   padding: 0.375rem 0.75rem;
+ }
+
+ .top-action-bar .btn-text {
+   background-color: #ffc107;
+   color: black;
+   font-weight: 600;
+   padding: 0.375rem 0.75rem;
+ }
+
+ .table thead th {
+   background-color: #e9ecef;
+   font-size: 0.9rem;
+   font-weight: 600;
+   color: #495057;
+   text-transform: none;
+   padding: 0.75rem;
+   vertical-align: middle;
+   border-bottom: 2px solid #dee2e6;
+ }
+
+ .table tbody td,
+ .table tbody th {
+   vertical-align: middle;
+   padding: 0.75rem;
+   border-color: #dee2e6;
+ }
+
+ .phone-number-detail {
+   line-height: 1.2;
+ }
+
+ .phone-number-detail .number {
+   font-weight: 500;
+   color: var(--text-color);
+ }
+
+ .phone-number-detail .status {
+   font-size: 0.8rem;
+ }
+
+ .text-completed {
+   color: #28a745 !important;
+ }
+
+ .text-primary-accent {
+   color: var(--primary-color) !important;
+ }
+
+ .action-btns .btn {
+   width: 30px;
+   height: 30px;
+   padding: 0;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 4px;
+   font-size: 0.9rem;
+ }
+
+ .action-btns .btn-call-row {
+   background-color: #28a745;
+   color: var(--white);
+   border: none;
+ }
+
+ .action-btns .btn-text-row {
+   background-color: #ffc107;
+   color: black;
+   border: none;
+ }
+
+ .rec-icon {
+   color: #28a745;
+   font-size: 1.5rem;
+ }
+
+
+ .form-switch-custom {
+   display: inline-block;
+   cursor: pointer;
+   -webkit-tap-highlight-color: transparent;
+ }
+
+ .form-switch-custom input[type="checkbox"] {
+   position: absolute;
+   opacity: 0;
+ }
+
+ .form-switch-custom label {
+   position: relative;
+   display: inline-block;
+   width: 32px;
+   height: 18px;
+   background-color: #ccc;
+   border-radius: 18px;
+   transition: background-color 0.2s;
+   margin-bottom: 0;
+ }
+
+ .form-switch-custom label::after {
+   content: '';
+   position: absolute;
+   width: var(--font-size-14);
+   height: var(--font-size-14);
+   border-radius: 50%;
+   background-color: var(--white);
+   top: 2px;
+   left: 2px;
+   transition: transform 0.2s;
+ }
+
+ .form-switch-custom input[type="checkbox"]:checked+label {
+   background-color: var(--primary-color);
+ }
+
+ .form-switch-custom input[type="checkbox"]:checked+label::after {
+   transform: translateX(14px);
+ }
+
+ .action-btns .dropdown-toggle {
+   color: var(--label-color);
+ }
+
+ .dropdown-menu .dropdown-item:hover {
+   background-color: var(--light-primary-shade);
+   color: var(--primary-color);
+ }
+
+ .dropdown-menu .dropdown-item i {
+   color: var(--label-color);
+ }
+
+ .dropdown-menu .dropdown-item:hover i {
+   color: var(--primary-color);
+ }
+
+ .new-row-actions .btn-check {
+   background-color: var(--primary-color);
+   color: var(--white);
+   border: none;
+ }
+
+ .new-row-actions .btn-cancel {
+   background-color: var(--label-color);
+   color: var(--white);
+   border: none;
+ }
